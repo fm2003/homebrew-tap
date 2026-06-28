@@ -1,10 +1,7 @@
 class Cbqn < Formula
   desc "BQN implementation in C"
   homepage "https://github.com/dzaima/CBQN"
-  url "https://github.com/dzaima/CBQN.git",
-      using:  :git,
-      branch: "develop"
-  version "latest"
+  head "https://github.com/dzaima/CBQN.git", branch: "develop"
   license "GPL-3.0-or-later"
 
   depends_on "pkg-config" => :build
