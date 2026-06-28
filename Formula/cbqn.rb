@@ -9,15 +9,8 @@ class Cbqn < Formula
   head "https://github.com/dzaima/CBQN.git", branch: "develop"
   license "GPL-3.0-or-later"
 
-  depends_on "pkg-config" => :build
+  depends_on "pkgconf" => :build
   depends_on "libffi"
-
-  def install
-    # Remove unrecognized options if they cause configure to fail
-    # https://docs.brew.sh/rubydoc/Formula.html#std_configure_args-instance_method
-    system "./configure", "--disable-silent-rules", *std_configure_args
-    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-  end
 
   def install
     system "make"
