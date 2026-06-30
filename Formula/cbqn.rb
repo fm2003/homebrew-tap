@@ -2,7 +2,7 @@ class Cbqn < Formula
   desc "BQN implementation in C"
   homepage "https://github.com/dzaima/CBQN"
   url "https://github.com/dzaima/CBQN.git",
-      tag: "v0.11.0"
+      tag: "v0.12.0"
   license "GPL-3.0-or-later"
   head "https://github.com/dzaima/CBQN.git", branch: "develop"
 
